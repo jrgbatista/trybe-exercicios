@@ -1,6 +1,7 @@
 h1 {
     width: 65px;    
     color: orange;
+    font-family: sans-serif;
 }
 ul {
     background-color: blue;
@@ -8,4 +9,23 @@ ul {
 .p-style, .ul-style {
     background-color: black;
     color: white;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body {
+    font-size: 16px;
+    text-align: justify;
+    font-family: monospace;
+}
+#rd {
+    background-color: red;
+}
+#yllw {
+    background-color: yellow;
+}
+#brwn {
+    background-color: brown;
 }
