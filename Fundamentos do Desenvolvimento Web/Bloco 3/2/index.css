@@ -1,0 +1,11 @@
+h1 {
+    width: 65px;    
+    color: orange;
+}
+ul {
+    background-color: blue;
+}
+.p-style, .ul-style {
+    background-color: black;
+    color: white;
+}
