@@ -1,0 +1,19 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, p {
+    text-align: center;
+}
+
+li:hover{
+    background-color: purple;
+}
+
+li:active{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ol, ul{
+    list-style: none;
+}
