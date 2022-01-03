@@ -1,4 +1,4 @@
-h1 {
+h1, h3, ul{
     text-align: center;
 }
 
@@ -8,6 +8,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    display: block;
+    margin-left: 625px;
 }
 
 .second {
@@ -16,6 +18,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
 }
 
 .third {
@@ -24,4 +27,9 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
+}
+
+li {
+    display: inline;
 }
