@@ -1,0 +1,6 @@
+O `history` é um comando que mostra o histórico de comandos que você executou no terminal. A quantidade ou o tamanho desse _"histórico"_ podem ser configurados para um número arbitrário de comandos ou para ver todo o histórico.
+
+# Mostra o histórico de comandos
+history
+# Pegar os últimos 10 comandos
+history | tail
