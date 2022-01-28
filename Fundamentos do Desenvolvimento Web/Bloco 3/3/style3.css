@@ -1,0 +1,50 @@
+h1, p {
+  text-align: center;
+}
+
+li:hover{
+  background-color: blueviolet;
+}
+
+li:active{
+  color: aliceblue;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+div:hover{
+  border: solid 1px yellow;
+}
+
+div:nth-of-type(1){
+  background-color: red;
+  color: aliceblue;
+}
+
+div:nth-of-type(2){
+  background-color: orange;
+  text-transform: uppercase;
+}
+
+div:nth-of-type(3){
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+}
+
+div:nth-of-type(4){
+  background-color: rgb(2, 2, 37);
+  color: aliceblue;
+  text-transform: lowercase;
+}
+
+div:nth-of-type(5){
+  background-color: rgb(248, 182, 182);
+  font-size: 2em;
+}
+
+h3:nth-of-type(2n+1){
+  font-style: italic;
+}
