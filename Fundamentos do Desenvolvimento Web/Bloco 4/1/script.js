@@ -30,13 +30,14 @@ console.log(perimeter)
 
 // Condições if e else
 
-const nota = "62";
+const nota = "93";
+let resultado = '';
 if (nota >= 80) {
-  console.log("Parabéns, você foi aprovado(a)!")
+  resultado = 'aprovada'
 } else if (nota < 80 && nota >= 60) {
-  console.log("Você está na nossa lista de espera")
+  resultado = 'lista'
 } else {
-  console.log("Você foi reprovado")
+  resultado = 'reprovada'
 }
 
 // Operadores lógicos
@@ -71,4 +72,17 @@ if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "qu
 
 // Switch e Case
 
-let estadoProcSeletiv = ""
+let estadoProcSeletiv = resultado;
+switch (estadoProcSeletiv) {
+  case resultado = 'aprovada':
+    console.log("Parabéns, você foi aprovado(a)!");
+    break;
+  case resultado = 'lista':
+    console.log("Você está na nossa lista de espera");
+    break;
+  case resultado = 'reprovada':
+    console.log("Você foi reprovado");
+    break;
+  default:
+    console.log('Não se aplica')
+}
