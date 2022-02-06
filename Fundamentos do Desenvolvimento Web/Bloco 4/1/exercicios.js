@@ -1,4 +1,4 @@
-const a = 19;
+const a = 18;
 const b = 20;
 
 // Adição
@@ -25,7 +25,7 @@ if (a > b) {
 }
 
 // O maior de três números
-const c = 12
+const c = 10
 if (a > b && a > c) {
   console.log(a);
 } else if (b > a && b > c) {
@@ -78,33 +78,40 @@ switch (pieceName) {
 }
 
 // Conversor de notas
-let percentage = 90;
+let percentage = null;
 let score = '';
-switch (percentage) {
-  case percentage >= 90 && percentage <= 100:
-    score = 'A';
-    console.log('Congratulations! Your score is: ' + score);
-    break;
-  case percentage >= 80:
-    score = 'B';
-    console.log('Very good! Your score is: ' + score);
-    break;
-  case percentage >= 70:
-    score = 'C';
-    console.log('Good. Your score is: ' + score);
-    break;
-  case percentage >= 60:
-    score = 'D';
-    console.log('Keep trying! Your score is: ' + score);
-    break;
-  case percentage >= 50:
-    score = 'E';
-    console.log('Please be careful about your studies! Your score is: ' + score);
-    break;
-  case percentage < 50 && percentage > 0:
-    score = 'F';
-    console.log('Not this time =( Your score is: ' + score);
-    break;
-  default:
-    console.log('Not applicable')
+if (percentage >= 90 && percentage <= 100) {
+  score = 'A';
+  console.log('Congratulations! Your score is: ' + score);
+} else if (percentage >= 80 && percentage < 90) {
+  score = 'B';
+  console.log('Very good! Your score is: ' + score);
+} else if (percentage >= 70 && percentage < 80) {
+  score = 'C';
+  console.log('Good. Your score is: ' + score);
+} else if (percentage >= 60 && percentage < 70) {
+  score = 'D';
+  console.log('Keep trying! Your score is: ' + score);
+} else if (percentage >= 50 && percentage < 60) {
+  score = 'E';
+  console.log('Please be careful about your studies! Your score is: ' + score);
+} else if (percentage < 50 && percentage > 0) {
+  score = 'F';
+  console.log('Not this time =( Your score is: ' + score);
+} else {
+  console.log('Not applicable');
+}
+
+//true if at least 1/3 is even
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+//true if at least 1/3 is odd
+if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
+  console.log(true);
+} else {
+  console.log(false);
 }
