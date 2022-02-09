@@ -1,24 +1,16 @@
-// exercício getElementById()
-const paragraph = document.getElementById("paragraph");
-paragraph.style.color = "red";
+document.querySelector("#paragraph").style.color = "red";
 
-const title = document.getElementById("page-title");
-title.style.color = "purple";
-title.innerText = "Este título foi inserido a através de JavaScript";
+document.querySelector("#page-title").style.color = "purple";
+document.querySelector("#page-title").innerText = "Este título foi inserido a através de JavaScript";
 
-const secondP = document.getElementById("second-paragraph");
-secondP.innerText = "Eu não sei o que escrever neste parágrafo, mas aprender DOM é bastante interessante.";
+document.querySelector("#second-paragraph").innerText = "Eu não sei o que escrever neste parágrafo, mas aprender DOM é bastante interessante.";;
 
-// const subtitle = document.getElementById("subtitle");
-// subtitle.innerText = "Um subtítulo seria uma legenda???";
-
-// exercício getElementsByClassName() e getElementsByTagName()
-let everyP = document.getElementsByClassName("all-p");
+let everyP = document.querySelectorAll(".all-p");
 for (i = 0; i < everyP.length; i += 1) {
   everyP[i].innerText = "Todos os parágrafos devem conter o mesmo texto PORQUE SIM";
 }
 
-everyP[0].style.color = "blue";
+everyP[1].style.color = "blue";
+everyP[1].style.textTransform = "uppercase";
 
-let subtitle = document.getElementsByTagName("h4");
-subtitle[0].style.color = "green";
+document.querySelectorAll("h4")[0].style.color = "green";
