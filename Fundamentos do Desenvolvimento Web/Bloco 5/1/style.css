@@ -28,17 +28,17 @@
   padding: 10px;
 }
 
-.no-emergency-tasks {
+.non-emergency-tasks {
   display: inline-block;
   height: 400px;
   width: 400px;
 }
 
-.no-emergency-tasks div {
+.non-emergency-tasks div {
   height: 198px;
 }
 
-.no-emergency-tasks h3 {
+.non-emergency-tasks h3 {
   color: white;
   margin-top: 10px;
   padding: 10px;
