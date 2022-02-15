@@ -1,6 +1,6 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (num of numbers) {
+for (let num of numbers) {
   // console.log(num);
 }
 
@@ -14,10 +14,18 @@ let mean = sum / numbers.length;
 // console.log(mean);
 
 if (mean > 20) {
-  console.log('valor maior que 20');
+  // console.log('valor maior que 20');
 } else {
-  console.log('valor menor ou igual a 20');
+  // console.log('valor menor ou igual a 20');
 }
+
+let largestNum = numbers[0];
+for (num of numbers) {
+  if (num > largestNum) {
+    largestNum = num;
+  }
+}
+// console.log(largestNum)
 
 let odd = 0;
 for (num of numbers) {
@@ -26,10 +34,18 @@ for (num of numbers) {
   }
 }
 if (odd === 0) {
-  console.log('nenhum número ímpar encontrado');
+  // console.log('nenhum número ímpar encontrado');
 } else {
-  console.log(odd);
+  // console.log(odd);
 }
+
+let smallestNum = numbers[0];
+for (num of numbers) {
+  if (num < smallestNum) {
+    smallestNum = num;
+  }
+}
+// console.log(smallestNum)
 
 let array = [];
 for (let i = 1; i <= 25; i += 1) {
@@ -37,6 +53,6 @@ for (let i = 1; i <= 25; i += 1) {
 }
 // console.log(array);
 
-for (let i = 0; i < array.length; indexOfPortfolio += 1) {
-  console.log(array[i] / 2);
+for (let i = 0; i < array.length; i += 1) {
+  // console.log(array[i] / 2);
 }
