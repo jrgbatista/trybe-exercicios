@@ -28,5 +28,3 @@ for (word of array) {
 }
 console.log(longestWord);
 console.log(shortestWord);
-
-let largestPrimeNumber = 0;
