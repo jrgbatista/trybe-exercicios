@@ -15,26 +15,46 @@
   <main>
     <form action="" method="get">
       <section>
-        <label for="full-name">Nome: <input type="text" name="name" id="full-name">
-        </label>
-        <label for="user-email">Email: <input type="email" name="email" id="user-email">
-        </label>
-        <label for="options">
-          <input type="radio" name="option-1" id="options" value="Opção 1">
-          <input type="radio" name="option-2" id="options" value="Opção 2">
-          <input type="radio" name="option-3" id="options" value="Opção 3">
-          <input type="radio" name="option-4" id="options" value="Opção 4">
-        </label>
-        <label for="">Espaço para digitar a resposta: <input type="text" name="" id="">
-        </label>
-        <label for=""><input type="date" name="" id="">
-        </label>
-        <label for="">Concordo 1 <input type="checkbox" name="" id=""></label>
-        <label for="">Concordo 2 <input type="checkbox" name="" id=""></label>
+        <div>
+          <label for="full-name">Nome: <input type="text" name="full-name" id="full-name" required>
+          </label>
+        </div>
+        <div>
+          <label for="user-email">Email: <input type="email" name="user-email" id="user-email" required>
+          </label>
+        </div>
+        <div>
+          <label for="options">Opção 1<input type="radio" name="options" id="option-1">
+          </label>
+          <label for="options">Opção 2<input type="radio" name="options" id="option-2">
+          </label>
+          <label for="options">Opção 3<input type="radio" name="options" id="option-3">
+          </label>
+          <label for="options">Opção 4<input type="radio" name="options" id="option-4">
+          </label>
+        </div>
+        <div>
+          <label for="answer">Espaço para digitar a resposta: <input type="text" name="answer" id="answer" required>
+          </label>
+        </div>
+        <div>
+          <label for="date"><input type="date" name="date" id="date" required>
+          </label>
+        </div>
+        <div>
+          <label for="agreed-1">Concordo 1 <input type="checkbox" name="agreed-1" id="agreed-1" required>
+          </label>
+          <label for="agreed-2">Concordo 2 <input type="checkbox" name="agreed-2" id="agreed-2" required>
+          </label>
+        </div>
       </section>
       <section>
-        <label for=""><input type="button" value="Enviar"></label>
-        <label for=""><input type="button" value="Apagar"></label>
+        <div>
+          <label for="send"><input type="button" value="Enviar" name="send" id="send">
+          </label>
+          <label for="erase"><input type="button" value="Apagar" name="erase" id="erase">
+          </label>
+        </div>
       </section>
     </form>
   </main>
