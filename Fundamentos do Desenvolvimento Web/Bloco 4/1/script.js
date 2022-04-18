@@ -42,9 +42,9 @@ if (nota >= 80) {
 
 // Operadores lógicos
 
-const currentHour = 1;
+const currentHour = 21;
 let message = "";
-if (currentHour >= 22) {
+if (currentHour >= 22 || currentHour < 4 && currentHour > -1) {
   message = "Não deveríamos comer nada, é hora de dormir";
 } else if (currentHour >= 18 && currentHour < 22) {
   message = "Rango da noite, vamos jantar :D";
@@ -55,7 +55,7 @@ if (currentHour >= 22) {
 } else if (currentHour >= 4 && currentHour < 11) {
   message = "Hmmm, cheiro de café recém passado";
 } else {
-  message = "Não deveríamos comer nada, é hora de dormir";
+  message = "Insira um horário válido";
 }
 console.log(message)
 
