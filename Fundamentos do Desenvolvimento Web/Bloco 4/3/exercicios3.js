@@ -5,11 +5,10 @@ for (let i = 10; i > 0; i -= 1) {
 // console.log(fat10);
 
 let word = 'tryber';
-let reverseWord = '';
-for (let letter = 0; letter < word.length; letter += 1) {
-  reverseWord += word[word.length - 1 - letter];
-}
-// reverseWord = word.split('').reverse().join('');
+let reverseWord = word.split('').reverse().join('');
+// for (let letter = 0; letter < word.length; letter += 1) {
+//   reverseWord += word[word.length - 1 - letter];
+// }
 // console.log(reverseWord);
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
@@ -26,5 +25,21 @@ for (word of array) {
     shortestWord = word;
   }
 }
-console.log(longestWord);
-console.log(shortestWord);
+// console.log(longestWord);
+// console.log(shortestWord);
+
+let highestPrime = 0;
+
+for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
+  let isPrime = true;
+  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    highestPrime = currentNumber;
+  }
+}
+
+// console.log(highestPrime);
