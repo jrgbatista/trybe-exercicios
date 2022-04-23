@@ -15,7 +15,7 @@ let names = {
   person3: 'Jorge',
 };
 for (person in names) {
-  console.log(`Olá ${names[person]}`);
+  // console.log(`Olá ${names[person]}`);
 }
 
 let car = {
@@ -24,7 +24,78 @@ let car = {
   year: 2020
 };
 for (key in car) {
-  console.log(key, car[key]);
+  // console.log(key, car[key]);
 }
 
 // Funções
+let x = 60;
+let y = 100;
+
+// const add = () => x + y;
+function add() {
+  return x + y;
+}
+
+// const sub = () => x - y;
+function sub() {
+  return x - y;
+}
+
+// const multiply = () => x * y;
+function multiply() {
+  return x * y;
+}
+
+// const div = () => x / y;
+function div() {
+  return x / y;
+}
+
+// const mod = () => x % y;
+function mod() {
+  return x % y;
+}
+
+// const highestBetweenTwo = () => x > y ? x : y;
+function highestBetweenTwo() {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+let z = 20;
+
+function highestBetweenThree() {
+  if (x > y && x > z) {
+    return `'x' is the highest with the value of ${x}`;
+  } else if (y > x && y > z) {
+    return `'y' is the highest with the value of ${y}`;
+  } else if (z > x && z > y) {
+    return `'z' is the highest with the value of ${z}`;
+  } else if (!x || !y || !z){
+    return 'Please, insert a numeric value';
+  } else {
+    return 'ERROR. Only numbers allowed';
+  }
+}
+
+function isPositive(){
+  if (x > 0) {
+    return true;
+  } else if (x < 0) {
+  return false;
+  } else {
+  return 'zero';
+  }
+}
+
+function isTriangle(){
+  if (x < 0 || y < 0 || z < 0) {
+    return false;
+  } else if (x + y + z == 180) {
+    return true;
+  }
+  return 'Anything but a triangle';
+}
