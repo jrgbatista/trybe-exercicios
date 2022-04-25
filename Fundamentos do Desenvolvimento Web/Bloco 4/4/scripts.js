@@ -65,21 +65,21 @@ function highestBetweenTwo() {
   }
 }
 
-let z = 20;
+let z = 9;
 
 function highestBetweenThree() {
-  if (x > y && x > z) {
-    return `'x' is the highest with the value of ${x}`;
-  } else if (y > x && y > z) {
-    return `'y' is the highest with the value of ${y}`;
-  } else if (z > x && z > y) {
-    return `'z' is the highest with the value of ${z}`;
-  } else if (!x || !y || !z){
-    return 'Please, insert a numeric value';
-  } else {
+  if (typeof x !== 'number' || typeof y !== 'number' || typeof z !== 'number') {
     return 'ERROR. Only numbers allowed';
+  } else if (x > y && x > z) {
+    return `'x' is the highest number with the value of ${x}`;
+  } else if (y > x && y > z) {
+    return `'y' is the highest number with the value of ${y}`;
+  } else {
+    return `'z' is the highest number with the value of ${z}`;
   }
 }
+
+console.log(highestBetweenThree());
 
 function isPositive(){
   if (x > 0) {
