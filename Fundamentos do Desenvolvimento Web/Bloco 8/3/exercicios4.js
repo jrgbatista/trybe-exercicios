@@ -26,12 +26,15 @@ const expectedResult = [
   },
 ];
 
+const currentYear = new Date().getFullYear();
+
 function oldBooksOrdered() {
   // escreva seu código aqui
-  const currentYear = new Date('May 2 2022').getFullYear();
   // obj Date obtido através do blog: https://www.freecodecamp.org/portuguese/news/date-now-em-javascript-como-obter-a-data-atual-em-javascript/
   return books
   .filter(book => (currentYear - book.releaseYear > 60))
   .sort((objA, objB) => objA.releaseYear - objB.releaseYear)
 }
 console.log(oldBooksOrdered());
+
+module.exports = currentYear;
