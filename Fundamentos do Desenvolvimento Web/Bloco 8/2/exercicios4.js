@@ -1,4 +1,4 @@
-const books = require("./exercicios");
+const books = require("./template");
 
 module.import = books;
 
