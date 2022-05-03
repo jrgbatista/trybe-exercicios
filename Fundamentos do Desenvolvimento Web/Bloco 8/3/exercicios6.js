@@ -12,7 +12,7 @@ const expectedResult = [
 function oldBooks() {
   // escreva seu código aqui
   return books
-  .filter(book => (currentYear - book.releaseYear) > 60)
-  .map(book => book.name);
+    .filter(book => (currentYear - book.releaseYear) > 60)
+    .map(book => book.name);
 }
 console.log(oldBooks());
