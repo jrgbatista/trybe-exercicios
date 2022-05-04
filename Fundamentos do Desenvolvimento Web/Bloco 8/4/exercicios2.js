@@ -7,7 +7,9 @@ const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Fra
 function reduceNames() {
   // escreva seu código aqui)
   const names = books
-    .reduce((acc, curr, index, arr) => index === arr.length - 1 ? `${acc} ${curr.author.name}.` : `${acc} ${curr.author.name},`, '');
+    .reduce((acc, curr, index, arr) =>
+      index === arr.length - 1 ? `${acc} ${curr.author.name}.` : `${acc} ${curr.author.name},`,
+      '');
   return names.trim();
 }
 

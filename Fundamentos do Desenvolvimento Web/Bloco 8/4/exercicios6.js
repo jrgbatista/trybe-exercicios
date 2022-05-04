@@ -9,17 +9,17 @@ const expected = [
 
 const sumGrades = (acc, grade) => acc + grade;
 
-const calcAverage = (index) => {
-  const sum = grades[index].reduce(sumGrades);
-  return sum / grades[index].length;
+const calcAverage = (i) => {
+  const sum = grades[i].reduce(sumGrades);
+  return sum / grades[i].length;
 }
 
 function studentAverage() {
   // escreva seu código aqui
-  return students.reduce((acc, curr, index) => {
+  return students.reduce((acc, student, i) => {
     const obj = {
-      name: curr,
-      average: calcAverage(index)
+      name: student,
+      average: calcAverage(i)
     };
     acc.push(obj);
     return acc;
