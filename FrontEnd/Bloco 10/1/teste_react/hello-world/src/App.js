@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import './App.css';
 import HelloWorld from './HelloWorld';
 import NewComponent from './NewComponent';
