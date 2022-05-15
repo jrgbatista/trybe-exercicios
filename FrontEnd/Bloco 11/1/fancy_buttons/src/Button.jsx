@@ -1,17 +1,33 @@
 import React, { Component } from "react";
 
-const handleClick1 = () => console.log('clicou no botão 1!');
-const handleClick2 = () => console.log('clicou no botão 2!');
-const handleClick3 = () => console.log('clicou no botão 3!');
-
 class Button extends Component {
+  constructor() {
+    super();
+    this.state = {
+      clicks: 0
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  setButtonColor = num => num % 2 === 0 && num !== 0 ? 'green' : 'white';
+
+  handleClick = () => {
+    this
+      .setState(({ clicks }) => ({ clicks: clicks + 1, }),
+        () => {
+          console.log(`Button color: ${this.setButtonColor(this.state.clicks)}`);
+        });
+  }
+
   render() {
+    const { clicks } = this.state;
     return (
-      <div>
-        <button onClick={handleClick1}>Botão 1</button>
-        <button onClick={handleClick2}>Botão 2</button>
-        <button onClick={handleClick3}>Botão 3</button>
-      </div>
+      <button
+        onClick={this.handleClick}
+        style={{ backgroundColor: this.setButtonColor(clicks) }}
+      >
+        Counter: {this.state.clicks}
+      </button>
     )
   }
 }
