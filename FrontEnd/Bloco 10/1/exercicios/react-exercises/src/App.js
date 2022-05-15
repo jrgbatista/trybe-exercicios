@@ -3,13 +3,13 @@ import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 
-const Task = (value) => {
-  return (
-    <li>{value}</li>
-  );
-}
+// const Task = (value) => {
+//   return (
+//     <li>{value}</li>
+//   );
+// }
 
-const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Estudar'];
+// const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Estudar'];
 
 function App() {
   return (
