@@ -7,7 +7,7 @@ function App() {
   return (
     <main className='App'>
       <h1>Pokedex</h1>
-      <Pokedex pokeData={pokemons} />
+      <Pokedex pokemons={pokemons} />
     </main>
   )
 }

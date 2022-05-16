@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 class Pokemon extends Component {
   render() {
-    const { pokeData } = this.props;
-    const { name, type, averageWeight, image } = pokeData;
+    const { pokemons } = this.props;
+    const { name, type, averageWeight, image } = pokemons;
     return (
       <article className='pokemon'>
         <div>
@@ -19,7 +19,7 @@ class Pokemon extends Component {
 }
 
 Pokemon.propTypes = {
-  pokeData: PropTypes.shape({
+  pokemons: PropTypes.shape({
     name: PropTypes.string,
     type: PropTypes.string,
     averageWeight: PropTypes.shape({
