@@ -21,17 +21,13 @@ class Form extends Component {
   handleChange = ({ target }) => {
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value
-    this.setState({
-      [name]: value,
-    })
+    this.setState({ [name]: value });
   }
 
   render() {
     const { favoriteKeyword, availability, message } = this.state;
     return (
       <main className='App'>
-        <header>
-        </header>
         <section>
           <form action="">
             <fieldset>
