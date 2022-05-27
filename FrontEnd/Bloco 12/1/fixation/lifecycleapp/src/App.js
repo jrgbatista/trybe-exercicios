@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Profile from './components/Profile';
+import Connections from './components/Connections';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    showProfile: true,
+  }
+
+  changeProfile = () => {
+    const { showProfile } = this.state;
+    this.setState({ showProfile: !showProfile });
+  }
+
+  render() {
+    const { showProfile } = this.state;
+
+    return (
+      <div>
+        <div className="gitNetwork d-flex flex-column justify-content-center">
+          {showProfile && <Profile />}
+          <div className="central d-flex justify-content-center">
+            <button
+              className="btn btn-dark align-self-center"
+              type="button"
+              onClick={this.changeProfile}
+            >
+              Mostrar / Ocultar Perfil
+            </button>
+          </div>
+          <Connections />
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
