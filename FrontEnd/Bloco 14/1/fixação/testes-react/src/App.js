@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
+import Email from './Email';
 
 function App() {
   return (
-    <div className="App">
-      <label htmlFor="id-email">
-        Email
-        <input id="id-email" type="email" />
-      </label>
-    </div>
-  );
+    <Email />
+  )
 }
 
 export default App;
