@@ -1,10 +1,12 @@
-// App.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Email from './Email';
+import Email from '../components/Email';
 
-// Adicione esse teste.
+// acessar os elementos da tela
+// interagir com os elementos (se necessário)
+// fazer os testes
+
 describe('Tela de inserção de email', () => {
   test('Verificando se existe o campo Email.', () => {
     render(<Email />);

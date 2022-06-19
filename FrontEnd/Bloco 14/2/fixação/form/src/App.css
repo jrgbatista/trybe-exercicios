@@ -7,14 +7,6 @@
   pointer-events: none;
 }
 
-.green-text {
-  color: green;
-}
-
-.red-text {
-  color: red;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
